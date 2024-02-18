@@ -1,0 +1,10 @@
+{
+  "projectname": "wechat-exercise1",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "ignoreDevUnusedFiles": false,
+  "ignoreUploadUnusedFiles": false,
+  "libVersion": "3.3.0"
+}

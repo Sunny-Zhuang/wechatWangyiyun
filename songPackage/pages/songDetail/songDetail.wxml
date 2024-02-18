@@ -1,0 +1,33 @@
+<view class="songDetailContainer">
+  <view class="author">Beyond</view>
+  <image class="needle {{isPlay?'needleRotate':''}}" src="/static/images/song/needle.png"></image>
+
+  <view class="discContainer {{isPlay&&'dicAnimation'}}">
+    <image class="discImage" src="/static/images/song/disc.png"></image>
+    <image class="centerImage" src="/static/images/recommendSong/02.jpg"></image>
+  </view>
+
+  <!-- 进度条 -->
+  <view class="progressContainer">
+    <text>{{currentTime}}</text>
+      <view class="barControl">
+        <view class="audioCurrentTimeBar" style="width:{{barWidth+ 'rpx'}}">
+         <view class="barCircle"></view>
+        </view>
+      </view>
+    <text>{{durationTiem}}</text>
+  </view>
+
+    <!-- 底部控制播放区域 -->
+    <view class="musicControl">
+    <text class="iconfont icon-woyaozhibo"></text>
+
+    <text class="iconfont icon-woyaozhibo" id="pre" bindtap="handleSwitch"></text>
+
+    <text class="iconfont {{isPlay?'icon-woyaozhibo': '.icon-meirituijian'}} big" bindtap="handleMusicPlay"></text>
+
+    <text class="iconfont icon-woyaozhibo" id="next" bindtap="handleSwitch"></text>
+
+    <text class="iconfont icon-woyaozhibo"></text>
+  </view>
+</view>
